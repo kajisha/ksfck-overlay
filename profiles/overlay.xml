@@ -1,0 +1,7 @@
+<repositories encoding="unicode" version="1.1">
+  <repo quality="experimental">
+    <name>ksfck</name>
+    <homepage>git://github.com/kajisha/ksfck-overlay.git</homepage>
+    <feed>https://github.com/kajisha/ksfck-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>

@@ -1,5 +1,3 @@
-# Copyright 2015 Hiroshi Kajisha
-# Distributed under the terms of the GNU General Public License v2
 EAPI=5
 DESCRIPTION="Fortune database of unix board of 2ch quotes"
 HOMEPAGE="http://wids.net/lab/"
