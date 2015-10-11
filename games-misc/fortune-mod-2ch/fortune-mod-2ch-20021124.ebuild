@@ -10,7 +10,8 @@ SLOT="0"
 KEYWORDS="alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd"
 IUSE=""
 
-RDEPEND="games-misc/fortune-mod"
+RDEPEND="games-misc/fortune-mod
+		app-i18n/nkf"
 DEPEND="dev-lang/perl
 		${RDEPEND}"
 
@@ -19,7 +20,7 @@ S="${WORKDIR}/fortune-2ch"
 src_install() {
 	dodoc About
 	insinto /usr/share/fortune
-	iconv -t UTF-8 2ch-fortune > 2ch-fortune.1
+	nkf --ic=s --oc=W 2ch-fortune > 2ch-fortune.1
 	newins 2ch-fortune.1 2ch-fortune
 	doins 2ch-fortune.dat
 }
