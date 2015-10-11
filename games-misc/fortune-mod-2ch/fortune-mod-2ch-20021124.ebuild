@@ -14,7 +14,7 @@ RDEPEND="games-misc/fortune-mod"
 DEPEND="dev-lang/perl
 		${RDEPEND}"
 
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}/fortune-2ch"
 
 src_install() {
 	insinto /usr/share/fortune
