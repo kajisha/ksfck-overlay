@@ -14,6 +14,6 @@ FONT_SUFFIX="otf"
 RESTRICT="binchecks strip"
 
 src_install() {
-	use linguas_ja && FONT_S="${S}/${PN}-${PV}" font_src_install
+	FONT_S="${S}/${PN}-${PV}" font_src_install
 	dodoc ${PN}-*-${PV}/*md ${PN}-*-${PV}/*pdf
 }
