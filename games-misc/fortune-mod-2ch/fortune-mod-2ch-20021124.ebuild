@@ -17,5 +17,7 @@ DEPEND="dev-lang/perl
 S="${WORKDIR}/fortune-2ch"
 
 src_install() {
+	dodoc About
 	insinto /usr/share/fortune
+	doins 2ch-fortune 2ch-fortune.dat
 }
