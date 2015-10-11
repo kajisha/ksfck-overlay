@@ -8,7 +8,7 @@ SRC_URI="http://wids.net/archive/test/fortune-2ch.p2.tgz"
 LICENSE=""
 SLOT="0"
 KEYWORDS="alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd"
-IUSE="offensive"
+IUSE=""
 
 RDEPEND="games-misc/fortune-mod"
 DEPEND="dev-lang/perl
@@ -17,6 +17,5 @@ DEPEND="dev-lang/perl
 S="${WORKDIR}/${MY_P}"
 
 src_install() {
-	default
-	use offensive || rm -f "${D}"/usr/share/fortune/off/*
+	insinto /usr/share/fortune
 }
