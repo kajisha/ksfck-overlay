@@ -19,5 +19,7 @@ S="${WORKDIR}/fortune-2ch"
 src_install() {
 	dodoc About
 	insinto /usr/share/fortune
-	doins 2ch-fortune 2ch-fortune.dat
+	iconv -t UTF-8 2ch-fortune > 2ch-fortune.1
+	newins 2ch-fortune.1 2ch-fortune
+	doins 2ch-fortune.dat
 }
