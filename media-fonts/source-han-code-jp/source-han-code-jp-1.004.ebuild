@@ -15,5 +15,4 @@ RESTRICT="binchecks strip"
 
 src_install() {
 	FONT_S="${S}/${PN}-${PV}R/OTF/SourceHanCodeJP/" font_src_install
-	dodoc ${PN}-*-${PV}/*md ${PN}-*-${PV}/*pdf
 }
