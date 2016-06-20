@@ -10,8 +10,6 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-DEPEND="app-eselect/eselect-ctags"
-
 src_configure() {
 	./autogen.sh
 	econf \
@@ -21,14 +19,4 @@ src_configure() {
 
 src_install() {
 	emake prefix="${D}"/usr mandir="${D}"/usr/share/man install
-}
-
-pkg_postinst() {
-	eselect ctags update
-	elog "You can set the version to be started by /usr/bin/ctags through"
-	elog "the ctags eselect module. \"man ctags.eselect\" for details."
-}
-
-pkg_postrm() {
-	eselect ctags update
 }
