@@ -29,7 +29,7 @@ src_unpack() {
 
 src_install() {
 	insinto /usr/share/poi
-	doins -r ../linux/*
+	doins -r ../linux-unpacked/*
 	fperms +x /usr/share/poi/poi
 
 	insinto /usr/share/applications
