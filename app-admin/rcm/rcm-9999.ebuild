@@ -10,7 +10,6 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 
 EGIT_REPO_URI="https://github.com/thoughtbot/rcm.git"
-EGIT_COMMIT="v${PV}"
 
 DEPEND="dev-ruby/mustache"
 
